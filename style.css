@@ -1,6 +1,6 @@
+/* MEGANS CSS */
 .card {
-    background: #f2f0e8
-;
+    background: #f2f0e8;
     border-radius: 14px;
     overflow: hidden;
     width: 320px;
@@ -164,7 +164,7 @@ body {
 }
 
 /* Om salen */
-.wrapper {
+.locus-wrapper {
     max-width: 100%;
     margin: 40px;
     display: grid;
@@ -175,40 +175,40 @@ body {
     border-radius: 10px;
 }
 
-.text-box h1 {
+.locus-text-box h1 {
     font-size: 42px;
     margin-bottom: 40px;
 }
 
 
-.text {
+.locus-text {
     margin-bottom: 170px;
     line-height: 1.5rem;
 }
 
 
-.icon-list {
+.locus-icon-list {
     margin-top: 20px;
     padding-left: 20px;
 }
 
-.icon-list li {
+.locus-icon-list li {
     margin-bottom: 10px;
 }
 
 /* Billedgalleri */
-.main-image img {
+.locus-main-image img {
     width: 100%;
     border-radius: 8px;
 }
 
-.thumbs {
+.locus-thumbs {
     display: flex;
     gap: 12px;
     margin-top: 15px;
 }
 
-.thumbs img {
+.locus-thumbs img {
     width: 120px;
     height: 80px;
     object-fit: cover;
@@ -216,7 +216,7 @@ body {
 }
 
 /* Billede af Hesselgaard ovenfra */
-.aerial-section img {
+.locus-aerial-section img {
     width: 95.5%;
     height: 600px;
     margin-left: 40px;
@@ -226,7 +226,7 @@ body {
 }
 
 /* Booking */
-.form-calendar-wrapper {
+.locus-form-calendar-wrapper {
     max-width: 1400px;
     margin: 40px auto;
     display: grid;
@@ -237,8 +237,8 @@ body {
     border-radius: 8px;
 }
 
-.booking-form input,
-.booking-form select {
+.locus-booking-form input,
+.locus-booking-form select {
     width: 100%;
     padding: 12px;
     margin-bottom: 12px;
@@ -246,40 +246,40 @@ body {
     border-radius: 6px;
 }
 
-.phone-row {
+.locus-phone-row {
     display: flex;
     gap: 10px;
 }
 
-.calendar-box {
+.locus-calendar-box {
     background: #EDE8E0;
     padding: 20px;
     border-radius: 8px;
 }
 
-.cal-header {
+.locus-cal-header {
     text-align: center;
     font-weight: bold;
     margin-bottom: 10px;
 }
 
-.calendar {
+.locus-calendar {
     width: 100%;
     border-collapse: collapse;
     text-align: center;
 }
 
-.calendar th, .calendar td {
+.locus-calendar th, .locus-calendar td {
     padding: 10px 0;
 }
 
-.calendar td {
+.locus-calendar td {
     background: #F6F2EB;
     border-radius: 4px;
 }
 
 /* Footer */
-.footer {
+.locus-footer {
     background: #EFE9DF;
     padding: 60px 40px;
     display: flex;
@@ -287,10 +287,196 @@ body {
     margin-top: 40px;
 }
 
-.logo-big {
-    font-size: 60px;
+.locus-logo-big {
+    width: 100px;
 }
 
-.contact h3 {
+.locus-contact h3 {
     margin-bottom: 10px;
+}
+
+
+/* SELINS CSS */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+
+  color: #3b3120;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.page-header {
+  background: #f4ede2;
+  border-bottom: 1px solid #d6c8b0;
+}
+
+.page-header .wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.25rem 0;
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+}
+
+.brand img {
+  height: 56px;
+}
+
+nav ul {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  color: #6a5f45;
+  font-weight: 600;
+}
+
+nav a.active {
+  color: #3b3120;
+}
+
+.content {
+  background: #6b673f;
+  padding: 3rem 0;
+  color: #fffbea;
+}
+
+.intro {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  align-items: stretch;
+}
+
+.intro-media {
+  flex: 1 1 320px;
+}
+
+.intro-media img {
+  border-radius: 16px;
+  border: 4px solid rgba(255, 255, 255, 0.2);
+}
+
+.intro-copy {
+  flex: 1 1 320px;
+  background: #5a5735;
+  border-radius: 16px;
+  padding: 1.5rem;
+}
+
+.intro-copy h1 {
+  margin-top: 0;
+  font-size: 2.2rem;
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  letter-spacing: 0.2em;
+  margin-bottom: 0.5rem;
+  color: #ddd4bb;
+}
+
+.team {
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.team-card {
+  flex: 1 1 300px;
+  background: #f7f3ec;
+  border: 1px solid #e0d7c7;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.team-image img {
+  width: 100%;
+}
+
+.team-body {
+  padding: 1.25rem;
+  color: #3b3120;
+}
+
+.team-body h2 {
+  margin: 0 0 0.5rem;
+  font-size: 1.2rem;
+}
+
+.team-body a {
+  font-weight: 600;
+}
+
+.site-footer {
+  background: #f7f3ec;
+  padding: 2.5rem 0;
+  color: #3b3120;
+}
+
+.site-footer .wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: space-between;
+}
+
+.footer-brand {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.footer-logo {
+  height: 52px;
+}
+
+.brand-name {
+  margin: 0;
+  font-weight: 700;
+}
+
+@media (max-width: 720px) {
+  .page-header .wrapper {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
