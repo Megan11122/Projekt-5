@@ -1,0 +1,182 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: #f4ede2;
+  color: #3b3120;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.page-header {
+  background: #f4ede2;
+  border-bottom: 1px solid #d6c8b0;
+}
+
+.page-header .wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.25rem 0;
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+}
+
+.brand img {
+  height: 56px;
+}
+
+nav ul {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  color: #6a5f45;
+  font-weight: 600;
+}
+
+nav a.active {
+  color: #3b3120;
+}
+
+.content {
+  background: #6b673f;
+  padding: 3rem 0;
+  color: #fffbea;
+}
+
+.intro {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  align-items: stretch;
+}
+
+.intro-media {
+  flex: 1 1 320px;
+}
+
+.intro-media img {
+  border-radius: 16px;
+  border: 4px solid rgba(255, 255, 255, 0.2);
+}
+
+.intro-copy {
+  flex: 1 1 320px;
+  background: #5a5735;
+  border-radius: 16px;
+  padding: 1.5rem;
+}
+
+.intro-copy h1 {
+  margin-top: 0;
+  font-size: 2.2rem;
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  letter-spacing: 0.2em;
+  margin-bottom: 0.5rem;
+  color: #ddd4bb;
+}
+
+.team {
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.team-card {
+  flex: 1 1 300px;
+  background: #f7f3ec;
+  border: 1px solid #e0d7c7;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.team-image img {
+  width: 100%;
+}
+
+.team-body {
+  padding: 1.25rem;
+  color: #3b3120;
+}
+
+.team-body h2 {
+  margin: 0 0 0.5rem;
+  font-size: 1.2rem;
+}
+
+.team-body a {
+  font-weight: 600;
+}
+
+.site-footer {
+  background: #f7f3ec;
+  padding: 2.5rem 0;
+  color: #3b3120;
+}
+
+.site-footer .wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: space-between;
+}
+
+.footer-brand {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.footer-logo {
+  height: 52px;
+}
+
+.brand-name {
+  margin: 0;
+  font-weight: 700;
+}
+
+@media (max-width: 720px) {
+  .page-header .wrapper {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
