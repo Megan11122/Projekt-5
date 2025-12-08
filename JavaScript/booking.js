@@ -1,5 +1,5 @@
 let selectedDates = []; 
-const calendar = document.getElementById("calendar");
+const calendar = document.getElementById("locus-calendar");
 const form = document.getElementById("bookingForm");
 
 let cells = calendar.querySelectorAll("td");
