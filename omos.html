@@ -7,21 +7,17 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header class="page-header">
-      <div class="wrapper">
-        <a class="brand" href="#">
-          <img src="images/Logo.png" alt="Hesselgaard logo" loading="lazy" />
-        </a>
-        <nav aria-label="Primær navigation">
-          <ul>
-            <li><a href="#kalender">Kalender</a></li>
-            <li><a href="#booking">Booking</a></li>
-            <li><a href="#locus">Locus</a></li>
-            <li><a class="active" href="#om-os">Om os</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+  <header class="navbar">
+    <div class="navbar__logo">
+      <img src="images/logo--with-text.png" alt="Hesselgaard logo" class="navbar__logo--img">
+    </div>
+    <nav class="navbar-links">
+      <a href="#">Kalender</a>
+      <a href="teambooking.html">Booking</a>
+      <a href="locus.html">Salen Locus</a>
+      <a href="omos.html">Om os</a>
+    </nav>
+  </header>
 
     <main class="content" id="om-os">
       <section class="intro wrapper">
@@ -90,27 +86,19 @@
       </section>
     </main>
 
-    <footer class="site-footer">
-      <div class="wrapper">
-        <div class="footer-brand">
-          <img
-            class="footer-logo"
-            src="images/Logo.png"
-            alt="Hesselgaard logo"
-            loading="lazy"
-          />
-          <p class="brand-name">Hesselgaard Glamping</p>
-        </div>
-        <div class="footer-contact">
-          <h2>Kontakt</h2>
-          <p>
-            Blæsenborgvej 76, 5380 Dalby<br />
-            +45 25 15 54 33<br />
-            <a href="mailto:bibi@hesselgaard.dk">bibi@hesselgaard.dk</a><br />
-            <a href="mailto:flemming@hesselgaard.dk">flemming@hesselgaard.dk</a>
-          </p>
-        </div>
-      </div>
-    </footer>
+<footer class="footer__wrapper">
+    <div class="logo__footer">
+        <img src="images/logo--with-text.png" alt="Hesselgaards logo">
+    </div>
+    <div class="footer__contact">
+        <h3>Kontakt</h3>
+        <p>
+        Blæsenborgvej 76, 5380 Dalby<br>
+        +45 25 15 54 33<br>
+        bibi@hesselgaard.dk<br>
+        flemming@hesselgaard.dk
+        </p>
+    </div>
+</footer>
   </body>
 </html>
