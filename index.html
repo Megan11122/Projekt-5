@@ -4,25 +4,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hesselgaard Glamping</title>
-
-  <!-- Overskriftens font -->
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
-
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- navbar -->
   <header class="navbar">
-    <div class="nav-logo">
-      <!-- Hesselgård logoet -->
-      <img src="Billeder/HesselgaardLogo.png" alt="Hesselgaard logo" class="logo-img">
+    <div class="navbar__logo">
+      <img src="images/logo--with-text.png" alt="Hesselgaard logo" class="navbar__logo--img">
     </div>
-
-    <nav class="nav-links">
+    <nav class="navbar__links">
       <a href="#">Kalender</a>
-      <a href="#">Booking</a>
-      <a href="#"> Salen Locus</a>
-      <a href="#">Om os</a>
+      <a href="teambooking.html">Booking</a>
+      <a href="locus.html">Salen Locus</a>
+      <a href="omos.html">Om os</a>
     </nav>
   </header>
 
@@ -193,11 +187,22 @@ Den rolige stemning skaber gode betingelser for faglige oplæg, beslutningsproce
   </div>
   
   </main>
-  
-  <script src="kalender.js"></script>
-  
 
-<!-- FOOTER -->
+<footer class="footer__wrapper">
+    <div class="logo__footer">
+        <img src="images/logo--with-text.png" alt="Hesselgaards logo">
+    </div>
+    <div class="footer__contact">
+        <h3>Kontakt</h3>
+        <p>
+        Blæsenborgvej 76, 5380 Dalby<br>
+        +45 25 15 54 33<br>
+        bibi@hesselgaard.dk<br>
+        flemming@hesselgaard.dk
+        </p>
+    </div>
+</footer>
+<!--  
 <footer class="footer">
   <div class="footer-inner">
     <div class="footer-left">
@@ -212,7 +217,10 @@ Den rolige stemning skaber gode betingelser for faglige oplæg, beslutningsproce
       <p>flemming@hesselgaard.dk</p>
     </div>
   </div>
-</footer>
-  </main>
+</footer> -->
+
+  <script src="#"></script>
+  <script src="kalender.js"></script>
+
 </body>
 </html>
