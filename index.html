@@ -168,59 +168,34 @@ Den rolige stemning skaber gode betingelser for faglige oplæg, beslutningsproce
   </div>
 </section>
 <!-- WORKSHOP- OG EVENTKALENDER -->
-<section class="calendar">
-  <div class="calendar-container">
-    <h2 class="calendar-heading">Workshop- og eventkalender</h2>
 
-    <div class="calendar-grid">
-      <!-- Dag 1 -->
-      <article class="calendar-day">
-        <div class="day-header">Man. 1/12</div>
-        <div class="day-body">
-          <p>Klang<br>kl. 17–18.30</p>
-        </div>
-      </article>
+<main>
 
-      <!-- Dag 2 -->
-      <article class="calendar-day">
-        <div class="day-header">Tir. 3/12</div>
-        <div class="day-body">
-          <!-- Ingen event -->
-        </div>
-      </article>
-
-      <!-- Dag 3 -->
-      <article class="calendar-day">
-        <div class="day-header">Ons. 4/12</div>
-        <div class="day-body">
-          <p>Juleklip<br>kl. 15–18</p>
-        </div>
-      </article>
-
-      <!-- Dag 4 -->
-      <article class="calendar-day">
-        <div class="day-header">Tor. 5/12</div>
-        <div class="day-body">
-          <!-- Ingen event -->
-        </div>
-      </article>
-
-      <!-- Dag 5 -->
-      <article class="calendar-day">
-        <div class="day-header">Fre. 6/12</div>
-        <div class="day-body">
-          <p>Yoga<br>kl. 15–17</p>
-        </div>
-      </article>
+  <section class="calendar">
+    <div class="calendar-container">
+      <h2 class="calendar-heading">Workshop- og eventkalender</h2>
+  
+      <div class="calendar-grid" id="calendarGrid"></div>
+  
+      <div class="calendar-week-nav">
+        <button class="week-arrow">&larr;</button>
+        <span>Uge 49</span>
+        <button class="week-arrow">&rarr;</button>
+      </div>
     </div>
-
-    <div class="calendar-week-nav">
-      <button class="week-arrow">&larr;</button>
-      <span>Uge 49</span>
-      <button class="week-arrow">&rarr;</button>
-    </div>
+  </section>
+  
+  <!-- POPUP BOX -->
+  <div id="popupBox" class="popup">
+    <h3></h3>
+    <p></p>
+    <button class="tilmeld-btn">Tilmeld dig her</button>
   </div>
-</section>
+  
+  </main>
+  
+  <script src="kalender.js"></script>
+  
 
 <!-- FOOTER -->
 <footer class="footer">
