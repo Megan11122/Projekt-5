@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../../../Desktop/new-images"
+		},
+		{
+			"path": "../../../../Desktop/videos"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Projekt-5"
+	}
+}
