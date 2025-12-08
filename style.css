@@ -480,3 +480,410 @@ nav a.active {
     justify-content: center;
   }
 }
+
+/* NIMAS CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Baggrundsfarve på hele siden */
+body {
+  font-family: "Poppins", sans-serif;
+  color: #1f1f1f;
+  background-color: #E9E5DC; 
+  overflow-x: hidden;        
+}
+
+
+
+
+/* NAVBAR */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  padding: 0 60px;
+  background-color: #E9E5DC; /* navbar-farve */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 10;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+}
+
+/* Logo-billede */
+.logo-img {
+  height: 44px;   
+  width: auto;
+}
+
+.nav-links {
+  display: flex;
+  gap: 32px;
+  font-size: 14px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  letter-spacing: 0.03em;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+.hero {
+  margin-top: 70px; 
+  width: 100%;
+  overflow: hidden;
+}
+
+.hero {
+  width: 100%;
+  overflow: hidden;
+}
+
+.hero-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+/* TELTE-SEKTION */
+.tents-section {
+  padding: 80px 40px 100px;
+  background-color: #6E6D42; 
+  color: #ffffff;
+}
+
+.tents-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.tents-heading {
+  font-family: "Playfair Display", serif;
+  font-size: clamp(32px, 4vw, 42px);
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+/* GRID MED 3 KORT */
+.tents-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-bottom: 40px;
+}
+
+.tent-card {
+  background-color: #E9E5DC;
+  border-radius: 18px;
+  overflow: hidden; /* Runding til billedet */
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+/* Billede øverst på kortet */
+.tent-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+
+/* Indholdet i kortet */
+.tent-content {
+  padding: 20px 22px 18px;
+  color: #333;
+  font-size: 14px;
+}
+
+.tent-content h3 {
+  font-family: "Playfair Display", serif;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.tent-content p {
+  line-height: 1.5;
+  margin-bottom: 14px;
+}
+
+/* Features-listen */
+.tent-features {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 16px;
+}
+
+.tent-features li {
+  font-size: 13px;
+  margin-bottom: 4px;
+}
+
+/* "Læs mere" linket nederst */
+.tent-readmore {
+  font-size: 13px;
+  text-decoration: none;
+  color: #A57A4A; 
+}
+
+.tent-readmore:hover {
+  text-decoration: underline;
+}
+
+.tent-readmore.disabled {
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+/* CTA-knap nederst */
+.tents-cta {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.book-btn {
+  display: inline-block;
+  padding: 14px 36px;
+  background-color: #85A6E3; 
+  color: #ffffff;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.book-btn:hover {
+  filter: brightness(1.05);
+}
+/* TEAMBUILDING SEKTION */
+.teambuilding {
+  background-color: #E9E5DC; 
+  padding: 80px 40px 100px;
+}
+
+.teambuilding-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* top billede + tekst side om side */
+.teambuilding-header {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 60px;
+}
+
+.tb-image {
+  width: 45%;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.tb-text {
+  width: 55%;
+}
+
+.tb-text h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #000000;
+}
+
+.tb-text p {
+  margin-bottom: 16px;
+  line-height: 1.6;
+  color: #000000;
+}
+
+/* Overskrift før kortene */
+.tb-subheading {
+  text-align: center;
+  font-family: "Playfair Display", serif;
+  font-size: 26px;
+  margin-bottom: 40px;
+  color: #000000;
+}
+
+/* GRID MED 3 KORT */
+.tb-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-bottom: 40px;
+}
+
+.tb-card {
+  background-color: #929761; 
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.tb-card-image {
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+
+.tb-card h4 {
+  font-family: "Playfair Display", serif;
+  margin-bottom: 10px;
+}
+
+.tb-card p {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #000000;
+}
+
+/* CTA KNAP */
+.tb-cta {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.tb-btn {
+  display: inline-block;
+  padding: 14px 36px;
+  background-color: #85A6E3; 
+  color: #ffffff;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.tb-btn:hover {
+  filter: brightness(1.06);
+}
+/* KALENDER-SEKTION */
+.calendar {
+  background-color: #6E6D42;        /* grøn baggrund */
+  padding: 80px 40px 90px;
+  color: #E9E5DC;
+}
+
+.calendar-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.calendar-heading {
+  font-family: "Playfair Display", serif;
+  font-size: clamp(32px, 4vw, 40px);
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+/* GRID MED 5 KOLONNER */
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 30px; /* mellemrum kolonnerne */
+  margin-bottom: 40px;
+}
+
+/* Hver dag består af: pill (dato) + stor boks */
+.calendar-day {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* luft mellem dato-pill og box */
+}
+
+/* Dato-pill */
+.day-header {
+  background-color: #F5F1E6; 
+  color: #000000;
+  padding: 8px 14px;
+  font-size: 13px;
+  font-weight: 600;
+  text-align: center;
+  border-radius: 8px;              /* samme afrunding som dit screenshot */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Den store boks */
+.day-body {
+  background-color: #F5F1E6;
+  padding: 16px 14px;
+  min-height: 250px; /* højere boks = som i Figma */
+  border-radius: 14px;
+  font-size: 14px;
+  color: #000;
+  line-height: 1.5;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.12);
+}
+
+/* Navigation under kalenderen */
+.calendar-week-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  font-size: 15px;
+  margin-top: 10px;
+}
+
+.week-arrow {
+  background: none;
+  border: none;
+  color: #E9E5DC;
+  font-size: 18px;
+}
+
+/* FOOTER */
+.footer {
+  background-color: #E9E5DC;
+  padding: 40px 40px 50px;
+}
+
+.footer-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.footer-logo {
+  height: 60px;
+  width: auto;
+}
+
+.footer-brand {
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  color: #3E3E3E;
+}
+
+.footer-right h3 {
+  font-size: 16px;
+  margin-bottom: 8px;
+  color: #3E3E3E;
+}
+
+.footer-right p {
+  font-size: 13px;
+  color: #3E3E3E;
+  line-height: 1.4;
+}
