@@ -1,3 +1,4 @@
+/* CECILIE */ 
 let selectedDates = []; 
 const calendar = document.getElementById("locus-calendar");
 const form = document.getElementById("bookingForm");
@@ -58,3 +59,4 @@ form.addEventListener("submit", function(event) {
         "Total pris: " + price + " kr."
     );
 });
+
