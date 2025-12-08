@@ -6,8 +6,8 @@ const form = document.getElementById("bookingForm");
 let cells = calendar.querySelectorAll("td");
 
 for (let i = 0; i < cells.length; i++) {
-    cells[i].addEventListener("click", function(event) {
-        let chosen = event.target.textContent;
+    cells[i].addEventListener("click", function(clickedCell) {
+        let chosen = clickedCell.target.textContent;
 
         if (chosen === "") return;
         selectedDates.push(chosen);
@@ -22,8 +22,8 @@ function calculatePrice() {
     return basePrice * totalNights;
 }
 
-form.addEventListener("submit", function(event) {
-    event.preventDefault();
+form.addEventListener("submit", function(formSubmission) {
+    formSubmission.preventDefault();
 
     let navn = document.getElementById("navn").value;
     let email = document.getElementById("email").value;
