@@ -12,7 +12,7 @@ for (let i = 0; i < cells.length; i++) {
         if (chosen === "") return;
         selectedDates.push(chosen);
 
-        event.target.style.background = "#6E6D42";
+        clickedCell.target.style.background = "#6E6D42";
     });
 }
 
