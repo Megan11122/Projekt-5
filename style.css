@@ -1,37 +1,20 @@
 /* FÆLLES BODY OG GENERELT */
-body {
-    background: #929761; 
-  }
 
-  body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: #6E6D42;
-    color: #000000;
-}
-
-body {
-  margin: 0;
-  min-height: 100vh;
-
-  color: #3b3120;
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Baggrundsfarve på hele siden */
 body {
-  font-family: "Poppins", sans-serif;
-  color: #1f1f1f;
-  background-color: #E9E5DC; 
-  overflow-x: hidden;        
+  margin: 0;
+  min-height: 100vh;
+  color: #3b3120;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #6E6D42;
+  padding-top: 100px;
 }
-
 
 /* FÆLLES HEADER */
 .navbar {
@@ -54,7 +37,6 @@ body {
   align-items: center;
 }
 
-/* Logo-billede */
 .navbar__logo--img {
   height: 44px;   
   width: auto;
@@ -76,7 +58,6 @@ body {
   text-decoration: underline;
 }
 
-
 /* FÆLLES FOOTER */
 .footer__wrapper {
     background: #EFE9DF;
@@ -95,7 +76,6 @@ body {
 }
 
 /* --------------------------------------------------------------------------------------- */
-
 
 /* MEGANS CSS */
 .card {
@@ -233,7 +213,14 @@ h1 {
 /* CECILIES CSS */
 
 /* Om salen */
-.locus-wrapper {
+.locus__header {
+  color: #474C1F;
+  text-align: left;
+  padding-top: 15px;
+  margin-left: 0px;
+}
+
+.locus__wrapper {
     max-width: 100%;
     margin: 40px;
     display: grid;
@@ -244,48 +231,45 @@ h1 {
     border-radius: 10px;
 }
 
-.locus-text-box h1 {
+.locus__text-box h1 {
     font-size: 42px;
     margin-bottom: 40px;
 }
 
-
-.locus-text {
+.locus__text {
     margin-bottom: 170px;
     line-height: 1.5rem;
 }
 
-
-.locus-icon-list {
+.locus__icon-list {
     margin-top: 20px;
     padding-left: 20px;
 }
 
-.locus-icon-list li {
+.locus__icon-list li {
     margin-bottom: 10px;
 }
 
 /* Billedgalleri */
-.locus-main-image img {
+.locus__images img {
     width: 100%;
     border-radius: 8px;
 }
 
-.locus-thumbs {
+.locus__small-images {
     display: flex;
     gap: 12px;
     margin-top: 15px;
 }
 
-.locus-thumbs img {
+.locus__small-images img {
     width: 120px;
     height: 80px;
     object-fit: cover;
     border-radius: 6px;
 }
 
-/* Billede af Hesselgaard ovenfra */
-.locus-aerial-section img {
+.locus__aerial-section img {
     width: 95.5%;
     height: 600px;
     margin-left: 40px;
@@ -294,39 +278,79 @@ h1 {
     object-fit: cover;
 }
 
-/* Booking */
-.locus-form-calendar-wrapper {
-    max-width: 1400px;
+
+/* Nedenstående CSS til bookingformularen (inkl. kalender) er lavet med hjælp fra ChatGPT (t.o.m. ".locus-calender td")
+    Promt og svar kan ses i bilag XXX - AI-promts */
+
+.form-calendar-wrapper {
+    max-width: 95.5%;
     margin: 40px auto;
     display: grid;
     grid-template-columns: 1.2fr 1fr;
     gap: 40px;
-    background: #6E6D42;
+    background: #E9E5DC;
     padding: 40px;
     border-radius: 8px;
 }
 
-.locus-booking-form input,
-.locus-booking-form select {
+.booking-form input,
+.booking-form select {
     width: 100%;
     padding: 12px;
     margin-bottom: 12px;
     border: none;
     border-radius: 6px;
+    border: #6E6D42 0.125px solid;
 }
 
-.locus-phone-row {
+select {
+  width: 100%;
+  padding: 14px 16px;
+  border-radius: 12px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  font-size: 16px;
+  appearance: none;     
+  cursor: pointer;
+}
+
+select:focus {
+  outline: none;
+  border-color: #6E6D42;
+}
+
+
+select {
+  background-image: url("data:image/svg+xml;utf8,<svg fill='%236E6D42' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 14px center;
+}
+
+
+button {
+  display: inline-block;
+  padding: 14px 36px;
+  background-color: #85A6E3; 
+  color: #ffffff;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+
+.phone-row {
     display: flex;
     gap: 10px;
 }
 
-.locus-calendar-box {
-    background: #EDE8E0;
+.calendar-box {
+    background: #F6F2EB;
+    border: #6E6D42 0.125px solid;
     padding: 20px;
     border-radius: 8px;
 }
 
-.locus-cal-header {
+.cal-header {
     text-align: center;
     font-weight: bold;
     margin-bottom: 10px;
@@ -368,18 +392,6 @@ a {
   padding: 0 1rem;
 }
 
-/*.page-header {
-  background: #f4ede2;
-  border-bottom: 1px solid #d6c8b0;
-}
-
-.page-header .wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 1.25rem 0;
-}*/
-
 .brand {
   display: inline-flex;
   align-items: center;
@@ -389,25 +401,7 @@ a {
   height: 56px;
 }
 
-/*nav ul {
-  display: flex;
-  gap: 1rem;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-nav a {
-  color: #6a5f45;
-  font-weight: 600;
-}
-
-nav a.active {
-  color: #3b3120;
-}*/
-
 .content {
-  background: #6b673f;
   padding: 3rem 0;
   color: #fffbea;
 }
@@ -481,30 +475,6 @@ nav a.active {
   font-weight: 600;
 }
 
-/*
-.site-footer {
-  background: #f7f3ec;
-  padding: 2.5rem 0;
-  color: #3b3120;
-}
-
-.site-footer .wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1.5rem;
-  justify-content: space-between;
-}
-
-.footer-brand {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
-
-.footer-logo {
-  height: 52px;
-}*/
-
 .brand-name {
   margin: 0;
   font-weight: 700;
@@ -522,18 +492,12 @@ nav a.active {
   }
 }
 
-
 /* --------------------------------------------------------------------------------------- */
 
 /* NIMAS CSS */
 
 .hero {
-  margin-top: 70px; 
-  width: 100%;
-  overflow: hidden;
-}
-
-.hero {
+  margin-top: -30px; 
   width: 100%;
   overflow: hidden;
 }
@@ -543,6 +507,7 @@ nav a.active {
   height: auto;
   display: block;
 }
+
 /* TELTE-SEKTION */
 .tents-section {
   padding: 80px 40px 100px;
@@ -781,7 +746,6 @@ nav a.active {
   margin-bottom: 45px;
 }
 
-
 .calendar-grid {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -789,13 +753,11 @@ nav a.active {
   margin-bottom: 40px;
 }
 
-
 .calendar-day {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
-
 
 .day-header {
   background-color: #F5F1E6; 
@@ -820,7 +782,6 @@ nav a.active {
   display: flex;
   align-items: flex-start;
 }
-
 
 .calendar-week-nav {
   display: flex;
@@ -868,41 +829,3 @@ border-radius: 10px;
 font-size: 1rem;
 cursor: pointer;
 }
-
-/*
-.footer-inner {
-  max-width: 1100px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.footer-left {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
-
-.footer-logo {
-  height: 60px;
-  width: auto;
-}
-
-.footer-brand {
-  font-size: 12px;
-  letter-spacing: 0.08em;
-  color: #3E3E3E;
-}
-
-.footer-right h3 {
-  font-size: 16px;
-  margin-bottom: 8px;
-  color: #3E3E3E;
-}
-
-.footer-right p {
-  font-size: 13px;
-  color: #3E3E3E;
-  line-height: 1.4;
-}*/

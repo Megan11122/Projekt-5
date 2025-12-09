@@ -19,107 +19,107 @@
     </nav>
   </header>
 
-<section class="locus-wrapper">
+    <section class="locus__wrapper">
 
-    <div class="locus-text-box">
-        <div class="locus-text">
-        <h1>Salen “Locus”</h1>
-        <p>
-            Hesselgaards smukke sal ligger på gårdens gamle loft og kombinerer landlig charme med en moderne fornemmelse af ro og rummelighed. De synlige bjælker giver rummet karakter og historie, mens de store vinduespartier lader dagslyset strømme ind og skaber en let og behagelig atmosfære. Det lyse trægulv binder helheden sammen og understøtter følelsen af varme, åbenhed og nærvær, samtidig med at udsigten til markerne og naturen omkring gården hele tiden er nærværende.
-            <br><br>
-            Salen er ideel til både samvær, kreative aktiviteter og teambuilding, hvor roen og de æstetiske rammer hjælper gruppen med at samle fokus. Den varme indretning med naturlige materialer, bløde tekstiler og loungemøbler indbyder til afslapning, samtaler og fordybelse, og gør det nemt for gæster at falde til og føle sig hjemme. Med Hindsholms smukke landskab lige udenfor døren bliver rummet en naturlig forlængelse af omgivelserne, og en dag her føles som et lille afbræk fra hverdagen – med plads til både refleksion, fællesskab og ny energi.
-        </p>
+        <div class="locus__text-box">
+            <div class="locus__text">
+            <h1 class="locus__header">Salen “Locus”</h1>
+            <p>
+                Hesselgaards smukke sal ligger på gårdens gamle loft og kombinerer landlig charme med en moderne fornemmelse af ro og rummelighed. De synlige bjælker giver rummet karakter og historie, mens de store vinduespartier lader dagslyset strømme ind og skaber en let og behagelig atmosfære. Det lyse trægulv binder helheden sammen og understøtter følelsen af varme, åbenhed og nærvær, samtidig med at udsigten til markerne og naturen omkring gården hele tiden er nærværende.
+                <br><br>
+                Salen er ideel til både samvær, kreative aktiviteter og teambuilding, hvor roen og de æstetiske rammer hjælper gruppen med at samle fokus. Den varme indretning med naturlige materialer, bløde tekstiler og loungemøbler indbyder til afslapning, samtaler og fordybelse, og gør det nemt for gæster at falde til og føle sig hjemme. Med Hindsholms smukke landskab lige udenfor døren bliver rummet en naturlig forlængelse af omgivelserne, og en dag her føles som et lille afbræk fra hverdagen – med plads til både refleksion, fællesskab og ny energi.
+            </p>
+            </div>
+
+            <ul class="locus__icon-list">
+                <li>Max kapacitet på 60 personer</li>
+                <li>Køkken med køl/fryser og medbragte madvarer</li>
+                <li>Opvaskemaskine i salens køkken</li>
+                <li>Storskærm til præsentationer</li>
+            </ul>
         </div>
 
-        <ul class="locus-icon-list">
-            <li>Max kapacitet på 60 personer</li>
-            <li>Køkken med køl/fryser og medbragte madvarer</li>
-            <li>Opvaskemaskine i salens køkken</li>
-            <li>Storskærm til præsentationer</li>
-        </ul>
-    </div>
-
-    <div class="locus-main-image">
-        <img src="images/salen-lounge.JPG" alt="Locus interiør">
-        <div class="locus-thumbs">
-            <img src="images/salen-langbord.JPG" alt="">
-            <img src="images/salen-konference1.JPG" alt="">
-            <img src="images/salen-lounge.JPG" alt="">
-            <img src="images/salen-wide.jpg" alt="">
+        <div class="locus__images">
+            <img src="images/salen-lounge.JPG" alt="Locus interiør">
+            <div class="locus__small-images">
+                <img src="images/salen-langbord.JPG" alt="">
+                <img src="images/salen-konference1.JPG" alt="">
+                <img src="images/salen-lounge.JPG" alt="">
+                <img src="images/salen-wide.jpg" alt="">
+            </div>
         </div>
-    </div>
+    </section>
 
-</section>
+    <section class="locus__aerial-section">
+        <img src="images/hesselgaard-ovenfra.png" alt="Luftfoto af Hesselgaard">
+    </section>
 
-<section class="locus-aerial-section">
-    <img src="images/hesselgaard-ovenfra.png" alt="Luftfoto af Hesselgaard">
-</section>
 
-<section class="locus-form-calendar-wrapper">
+<!-- Bookingformularen herunder er lavet med hjælp af ChatGPT (og derefter rettet lidt til)
+        Promt og svar kan findes i bilag XXX - AI-promts -->
 
-    <form class="locus-booking-form" id="locus-bookingForm">
-        <input type="text" id="navn" placeholder="For- og efternavn">
-        <input type="email" id="email" placeholder="E-mail">
+    <section class="form-calendar-wrapper">
 
-        <div class="locus-phone-row">
-            <input type="text" id="locus-landekode" value="+45">
-            <input type="text" id="locus-phone" placeholder="Telefonnummer">
+        <form class="booking-form" id="bookingForm">
+            <input type="text" id="navn" placeholder="For- og efternavn">
+            <input type="email" id="email" placeholder="E-mail">
+
+            <div class="phone-row">
+                <input type="text" id="landekode" value="+45">
+                <input type="text" id="phone" placeholder="Telefonnummer">
+            </div>
+
+            <select id="persons">
+                <option>Antal personer</option>
+                <option value="1">1 person</option>
+                <option value="2">2 personer</option>
+                <option value="3">3 personer</option>
+            </select>
+
+            <select id="extra">
+                <option>Ekstra opredning</option>
+                <option value="ja">Ja</option>
+                <option value="nej">Nej</option>
+            </select>
+
+            <button type="submit">Book</button>
+        </form>
+
+
+    <div class="calendar-box">
+        <div class="cal-header">
+            <span>&larr;</span> April 2026 <span>&rarr;</span>
         </div>
 
-        <select id="locus-persons">
-            <option>Antal personer</option>
-            <option value="1">1 person</option>
-            <option value="2">2 personer</option>
-            <option value="3">3 personer</option>
-        </select>
-
-        <select id="locus-extra">
-            <option>Ekstra opredning</option>
-            <option value="ja">Ja</option>
-            <option value="nej">Nej</option>
-        </select>
-
-        <button type="submit">Book</button>
-    </form>
-
-
-  <div class="locus-calendar-box">
-      <div class="locus-cal-header">
-          <span>&larr;</span> April 2026 <span>&rarr;</span>
-      </div>
-
-      <table class="locus-calendar" id="locus-calendar">
-          <thead>
-              <tr><th>Man</th><th>Tir</th><th>Ons</th><th>Tor</th><th>Fre</th><th>Lør</th><th>Søn</th></tr>
-          </thead>
-          <tbody>
-              <tr><td class="locus-empty"></td><td class="locus-empty"></td><td class="locus-empty"></td><td>1</td><td>2</td><td>3</td><td>4</td></tr>
-              <tr><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td><td>11</td></tr>
-              <tr><td>12</td><td>13</td><td>14</td><td>15</td><td>16</td><td>17</td><td>18</td></tr>
-              <tr><td>19</td><td>20</td><td>21</td><td>22</td><td>23</td><td>24</td><td>25</td></tr>
-              <tr><td>26</td><td>27</td><td>28</td><td>29</td><td>30</td><td class="locus-empty"></td><td class="locus-empty"></td></tr>
-          </tbody>
-      </table>
-  </div>
-
-</section>
-
-<footer class="footer__wrapper">
-    <div class="logo__footer">
-        <img src="images/logo--with-text.png" alt="Hesselgaards logo">
+        <table class="locus-calendar" id="locus-calendar">
+            <thead>
+                <tr><th>Man</th><th>Tir</th><th>Ons</th><th>Tor</th><th>Fre</th><th>Lør</th><th>Søn</th></tr>
+            </thead>
+            <tbody>
+                <tr><td class="empty"></td><td class="empty"></td><td class="empty"></td><td>1</td><td>2</td><td>3</td><td>4</td></tr>
+                <tr><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td><td>11</td></tr>
+                <tr><td>12</td><td>13</td><td>14</td><td>15</td><td>16</td><td>17</td><td>18</td></tr>
+                <tr><td>19</td><td>20</td><td>21</td><td>22</td><td>23</td><td>24</td><td>25</td></tr>
+                <tr><td>26</td><td>27</td><td>28</td><td>29</td><td>30</td><td class="empty"></td><td class="empty"></td></tr>
+            </tbody>
+        </table>
     </div>
-    <div class="footer__contact">
-        <h3>Kontakt</h3>
-        <p>
-        Blæsenborgvej 76, 5380 Dalby<br>
-        +45 25 15 54 33<br>
-        bibi@hesselgaard.dk<br>
-        flemming@hesselgaard.dk
-        </p>
-    </div>
-</footer>
+    </section>
 
-<script src="script.js"></script>
-
+    <footer class="footer__wrapper">
+        <div class="logo__footer">
+            <img src="images/logo--with-text.png" alt="Hesselgaards logo">
+        </div>
+        <div class="footer__contact">
+            <h3>Kontakt</h3>
+            <p>
+            Blæsenborgvej 76, 5380 Dalby<br>
+            +45 25 15 54 33<br>
+            bibi@hesselgaard.dk<br>
+            flemming@hesselgaard.dk
+            </p>
+        </div>
+    </footer>
 </body>
+<script src="JavaScript/booking.js"></script>
 </html>
