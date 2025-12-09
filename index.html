@@ -1,4 +1,4 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="da">
 <head>
   <meta charset="UTF-8">
@@ -9,217 +9,45 @@
 </head>
 <body>
   <header class="navbar">
-    <div class="navbar__logo">
-      <img src="images/logo--with-text.png" alt="Hesselgaard logo" class="navbar__logo--img">
+    <div class="navbarlogo">
+      <img src="images/logo--with-text.png" alt="Hesselgaard logo" class="navbarlogo--img">
     </div>
-    <nav class="navbar__links">
+
+    <button class="burger" type="button" aria-label="Åbn menu" aria-controls="primary-navigation" aria-expanded="false" data-burger>
+      <span class="burger__bar" aria-hidden="true"></span>
+      <span class="burger__bar" aria-hidden="true"></span>
+      <span class="burger__bar" aria-hidden="true"></span>
+    </button>
+
+    <nav class="navbar-links" id="primary-navigation" data-nav>
       <a href="#">Kalender</a>
       <a href="teambooking.html">Booking</a>
       <a href="locus.html">Salen Locus</a>
       <a href="omos.html">Om os</a>
+      <div class="nav-curriculum">
+        <p class="nav-curriculum__title">Hvad er,- og hvordan kodes/bruges:</p>
+        <ol class="nav-curriculum__list">
+          <li><span class="nav-curriculum__number">1.</span>Versionsstyring herunder git &amp; GitHub</li>
+          <li><span class="nav-curriculum__number">2.</span>Javascript</li>
+          <li><span class="nav-curriculum__number">3.</span>DOM (document object model)</li>
+          <li><span class="nav-curriculum__number">4.</span>Placering og udførelse af JS</li>
+          <li><span class="nav-curriculum__number">5.</span>Fejlfinding (debugging)</li>
+          <li><span class="nav-curriculum__number">6.</span>Variabler og typer</li>
+          <li><span class="nav-curriculum__number">7.</span>Operatorer</li>
+          <li><span class="nav-curriculum__number">8.</span>Arrays</li>
+          <li><span class="nav-curriculum__number">9.</span>Kontrolstruktur (if-else)</li>
+          <li><span class="nav-curriculum__number">10.</span>Kontrolstruktur (loops)</li>
+          <li><span class="nav-curriculum__number">11.</span>Objekter</li>
+          <li><span class="nav-curriculum__number">12.</span>Funktioner</li>
+          <li><span class="nav-curriculum__number">13.</span>Variable scope</li>
+          <li><span class="nav-curriculum__number">14.</span>Events</li>
+          <li><span class="nav-curriculum__number">15.</span>Forskellen på var og let</li>
+          <li><span class="nav-curriculum__number">16.</span>Library (ekstra - behøves ikke anvendt)</li>
+        </ol>
+      </div>
     </nav>
   </header>
-  <main>
-    <section class="hero">
-      <video autoplay muted loop>
-        <source src="images/banner.mp4" type="video/mp4" class="hero-img">
-        Your browser does not support the video tag.
-      </video>
-    </section>
-  
-  <!-- Telte sektion -->
-  <section class="tents-section">
-    <div class="tents-container">
-      <h2 class="tents-heading">Se vores telte her</h2>
 
-      <div class="tents-grid">
-        <!-- Aqua teltet -->
-        <article class="tent-card">
-          <img src="images/aqua.png" alt="Teltet Aqua" class="tent-image">
-          <div class="tent-content">
-            <h3>Aqua</h3>
-            <p>
-              Teltet ligger idyllisk i vores frugtplantage og afhængig af årstiden er der adgang
-              til sunde snacks lige fra træet. Teltet ligger tættest af de tre telte...
-            </p>
-
-            <ul class="tent-features">
-              <li>Én dobbeltseng og to enkeltsenge</li>
-              <li>Fælles bad- og toiletområde</li>
-            </ul>
-
-            <a href="#" class="tent-readmore">Læs mere →</a>
-          </div>
-        </article>
-
-        <!-- Terra teltet -->
-        <article class="tent-card">
-          <img src="images/terra.png" alt="Teltet Terra" class="tent-image">
-          <div class="tent-content">
-            <h3>Terra</h3>
-            <p>
-              Teltet ligger i udkanten af vores frugtplantage – tæt på telt “Aqua” og dermed relativt
-              tæt på the-køkkenet og kaninfarmen. Teltet ligger i skyggen af et stort træ...
-            </p>
-
-            <ul class="tent-features">
-              <li>Én dobbeltseng og to enkeltsenge</li>
-              <li>Fælles bad- og toiletområde</li>
-            </ul>
-
-            <a href="#" class="tent-readmore">Læs mere →</a>
-          </div>
-        </article>
-
-        <!-- Silva teltet -->
-        <article class="tent-card">
-          <img src="images/silva.png" alt="Teltet Silva" class="tent-image">
-          <div class="tent-content">
-            <h3>Silva</h3>
-            <p>
-              Teltet ligger lidt mere afsidigt. Her bor du uforstyrret fra andre gæster og har fuld
-              udsigt over markerne. De nærmeste “naboer” er vores to hyggelige heste som...
-            </p>
-
-            <ul class="tent-features">
-              <li>Én dobbeltseng og to enkeltsenge</li>
-              <li>Fælles bad- og toiletområde</li>
-            </ul>
-
-            <span class="tent-readmore disabled">Læs mere →</span>
-          </div>
-        </article>
-      </div>
-
-      <div class="tents-cta">
-        <a href="#" class="book-btn">Book dit ophold her</a>
-      </div>
-    </div>
-  </section>
-  <!-- TEAMBUILDING SEKTION -->
-<section class="teambuilding">
-  <div class="teambuilding-container">
-
-    <div class="teambuilding-header">
-      <img src="images/hesselgaard-ovenfra.png" alt="Teambuilding billede" class="tb-image">
-      
-      <div class="tb-text">
-        <h2>Teambuilding i naturskønne rammer</h2>
-        <p>
-          Hos Hesselgaard får jeres team en unik mulighed for at styrke fællesskabet i rolige og naturnære omgivelser.
-          De lyse, æstetiske aktivitetsrum danner en ideel ramme for workshops, strategidage og samarbejdsøvelser, hvor der er plads til at tænke klart og være til stede uden forstyrrelser.
-        </p>
-        <p>
-          Her kan I kombinere faglige aktiviteter med glamping-overnatninger, der i sig selv fungerer som en nærværende teambuildingoplevelse: tid ved bålet, fælles madlavning og simple stunder i naturen, hvor relationerne får lov at vokse.
-        </p>
-        <p>
-          Et ophold hos Hesselgaard skaber ro, fordybelse og stærkere fællesskaber — midt i naturen og tæt på hinanden.
-        </p>
-      </div>
-    </div>
-
-    <h3 class="tb-subheading">Book din teambuilding oplevelse her</h3>
-
-    <div class="tb-grid">
-      <!-- Kort 1 -->
-      <article class="tb-card">
-        <img src="images/ro.png" class="tb-card-image" alt="">
-        <h4>Ro og nærvær</h4>
-        <p>
-          En mulighed, der udnytter høloftets lyse og rolige atmosfære som ramme for aktiviteter, der giver plads til fordybelse og mental ro.
-
-          Her kan man samle sit team til stille samvær, refleksion eller andre blide og nærværende oplevelser i smukke omgivelser.
-        </p>
-      </article>
-
-      <!-- Kort 2 -->
-      <article class="tb-card">
-        <img src="images/krea.png" class="tb-card-image" alt="">
-        <h4>Kreativitet og samarbejde</h4>
-        <p>
-          En mulighed, der giver mulighed for at bruge det lyse rum til kreative processer, samarbejdsøvelser eller uformelle fællesaktiviteter.
-
-          Rummet egner sig godt til workshops, gruppearbejde og idéudvikling, hvor der er brug for luft, bevægelse og inspirerende rammer.
-        </p>
-      </article>
-
-      <!-- Kort 3 -->
-      <article class="tb-card">
-        <img src="images/strat.png" class="tb-card-image" alt="">
-        <h4>Strategi og planlægning</h4>
-        <p>
-          En mulighed, der gør det lyse rum til den ideelle ramme for fokusarbejde, møder og planlægningsdage.
-
-          Den rolige stemning skaber gode betingelser for faglige oplæg, beslutningsprocesser og strategiske samtaler, hvor man har brug for at arbejde uforstyrret.
-        </p>
-      </article>
-    </div>
-
-    <div class="tb-cta">
-      <a href="#" class="tb-btn">Book jeres ophold her</a>
-    </div>
-
-  </div>
-</section>
-<!-- WORKSHOP- OG EVENTKALENDER -->
-
-
-  <section class="calendar">
-    <div class="calendar-container">
-      <h2 class="calendar-heading">Workshop- og eventkalender</h2>
-  
-      <div class="calendar-grid" id="calendarGrid"></div>
-  
-      <div class="calendar-week-nav">
-        <button class="week-arrow">&larr;</button>
-        <span>Uge 49</span>
-        <button class="week-arrow">&rarr;</button>
-      </div>
-    </div>
-  </section>
-  
-  <!-- POPUP BOX -->
-  <div id="popupBox" class="popup">
-    <h3></h3>
-    <p></p>
-    <button class="tilmeld-btn">Tilmeld dig her</button>
-  </div>
-  
-  </main>
-
-<footer class="footer__wrapper">
-    <div class="logo__footer">
-        <img src="images/logo--with-text.png" alt="Hesselgaards logo">
-    </div>
-    <div class="footer__contact">
-        <h3>Kontakt</h3>
-        <p>
-        Blæsenborgvej 76, 5380 Dalby<br>
-        +45 25 15 54 33<br>
-        bibi@hesselgaard.dk<br>
-        flemming@hesselgaard.dk
-        </p>
-    </div>
-</footer>
-<!--  
-<footer class="footer">
-  <div class="footer-inner">
-    <div class="footer-left">
-      <img src="Billeder/hesselgaardlogo.png" alt="Hesselgaard logo" class="footer-logo">
-      <p class="footer-brand">HESSELGAARD<br>GLAMPING</p>
-    </div>
-    <div class="footer-right">
-      <h3>Kontakt</h3>
-      <p>Blaesensborgvej 75, 5380 Dalby</p>
-      <p>+45 25 15 54 33</p>
-      <p>bibi@hesselgaard.dk</p>
-      <p>flemming@hesselgaard.dk</p>
-    </div>
-  </div>
-</footer> -->
-
-  <script src="#"></script>
-  <script src="JavaScript/kalender.js"></script>
-
+  <script src="script.js" defer></script>
 </body>
 </html>
