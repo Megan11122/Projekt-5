@@ -6,21 +6,24 @@
     return;
   }
 
-  const navLinks = nav.querySelectorAll('a[href]');
+  const navLinks = Array.from(nav.querySelectorAll('a[href]'));
   const desktopMedia = window.matchMedia('(min-width: 900px)');
+  let menuIsOpen = false;
 
   function openMenu() {
     burger.setAttribute('aria-expanded', 'true');
     nav.classList.add('open');
+    menuIsOpen = true;
   }
 
   function closeMenu() {
     burger.setAttribute('aria-expanded', 'false');
     nav.classList.remove('open');
+    menuIsOpen = false;
   }
 
   function toggleMenu() {
-    if (nav.classList.contains('open')) {
+    if (menuIsOpen) {
       closeMenu();
     } else {
       openMenu();
