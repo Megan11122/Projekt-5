@@ -1,4 +1,4 @@
-
+// Megans del
 let days = [
     { dato: "Man. 8/12", event: "Klang<br>kl. 17–18.30" },
     { dato: "Tir. 9/12", event: "" },

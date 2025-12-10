@@ -1,3 +1,5 @@
+// Nimas del
+
 // gallery-modal.js
 // Simpelt billedgalleri med modal til Hesselgaard (ligger i ekstern fil og kan versionsstyres i git/github)
 
