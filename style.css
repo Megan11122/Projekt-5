@@ -494,11 +494,12 @@ a {
   color: #fffbea;
 }
 
-.intro {
+.intro-wrapper {
   display: flex;
   flex-wrap: wrap;
   gap: 1.5rem;
   align-items: stretch;
+  padding: 40px;
 }
 
 .intro-media {
@@ -530,11 +531,12 @@ a {
   color: #ddd4bb;
 }
 
-.team {
+.team-wrapper {
   margin-top: 2rem;
   display: flex;
   flex-wrap: wrap;
   gap: 1.5rem;
+  padding: 40px;
 }
 
 .team-card {
