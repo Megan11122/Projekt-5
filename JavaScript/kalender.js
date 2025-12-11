@@ -1,4 +1,6 @@
 // Megans del
+//Jeg skal lave sådaj en box når jeg trykker på klang så kommer der er div box frem hvor jeg bruger mit pensum ikke andet end det. 
+
 let days = [
     { dato: "Man. 8/12", event: "Klang<br>kl. 17–18.30" },
     { dato: "Tir. 9/12", event: "" },
@@ -38,7 +40,7 @@ let days = [
         }
       });
       
-    
+      //jeg skal lave en knap hvor der står tilmeld dig her men den behøves ikke virke, den skal bare være i html
     grid.appendChild(dayBox);
     let popup = document.getElementById("popupBox");
 
