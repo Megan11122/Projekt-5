@@ -365,7 +365,49 @@ h1 {
     margin-right: 40px;
     border-radius: 10px;
     object-fit: cover;
+
+    /* Modal koden til billeder galleri Nima */
 }
+.image-modal {
+  position: fixed;
+  inset: 0;
+  display: none;          /* VIGTIGT: gem som standard */
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+}
+
+.image-modal--visible {
+  display: flex;          /* Vises først når denne klasse tilføjes */
+}
+
+.image-modal__overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.image-modal__content {
+  position: relative;
+  max-width: min(92vw, 1100px);
+  width: 100%;
+  border-radius: 18px;
+  overflow: hidden;
+  background: #111;
+}
+
+.image-modal__img {
+  width: 100%;
+  max-height: 80vh;
+  object-fit: cover;
+}
+
+/* knapperne */
+.image-modal__close,
+.image-modal__arrow {
+  /* dine eksisterende styles er fine */
+}
+
 
 
 /* Nedenstående CSS til bookingformularen (inkl. kalender) er lavet med hjælp fra ChatGPT (t.o.m. ".locus-calender td")
